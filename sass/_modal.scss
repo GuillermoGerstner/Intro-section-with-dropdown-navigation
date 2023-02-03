@@ -1,0 +1,469 @@
+
+.modal {
+    /*background-color: rgba(255, 94, 0, 0);
+    position: absolute;
+    display: none;
+    width: 375px;
+    height: 780px;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;*/
+
+    &__background {
+        position: absolute;
+        width: 375px;
+        height: 780px;
+        left: 0px;
+        top: 0px;
+        
+        background: #151515;
+        mix-blend-mode: normal;
+        //opacity: 0.75;
+
+        opacity: 0;
+        z-index: -1;
+        transition: all .6s ease;
+    }
+
+    &__navbar {
+        position: absolute;
+        width: 240px;
+        height: 780px;
+        //left: 135px;
+
+        transform: translateX(100vw);
+        transition: transform .6s ease;
+
+        top: 0px;
+        
+        background: #FFFFFF;
+
+        &__close {
+            position: absolute;
+            width: 24.04px;
+            height: 24.04px;
+            left: 195.98px;
+            top: 21.98px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__features {
+            background-color: rgba(255, 166, 0, 0);
+            width: auto;
+            height: auto;
+            margin: 78px 0px 0px 24px;
+
+            &__title {
+                background-color: rgba(172, 255, 47, 0);
+                display: flex;
+                width: 96px;
+                height: 26px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &__text {
+                    height: 26px;
+                    
+                    font-family: 'Epilogue';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    
+                    color: #686868;
+                }
+
+                &__image {
+                    width: 10px;
+                    height: 6px;
+                    margin: 10px 0px 0px 16px;
+                    transition: transform .5s;
+                }
+            }
+
+            &__list {
+                //display: none;
+                background-color: rgba(255, 0, 0, 0);
+                width: 119px;
+                //height: 152px;
+
+                height: 0;
+                padding: 0;
+                overflow: hidden;
+                transition: all .5s ease;
+                margin: 0;
+
+                margin-left: 23px;
+                //margin-top: 24px;
+                //margin-bottom: 24px;
+
+                &__item1 {
+                    background-color: rgba(0, 255, 255, 0);
+                    display: flex;
+                    width: 106px;
+                    height: 26px;
+                    margin: 0px 0px 0px 1px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &__image {
+                        width: 17.5px;
+                        height: 20px;
+                        margin-top: 2px;
+                    }
+
+                    &__text {
+                        height: 26px;
+                        margin: 0px 0px 0px 16px;
+                        
+                        font-family: 'Epilogue';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        color: #686868;
+                    }
+                }
+
+                &__item2 {
+                    background-color: rgba(0, 255, 255, 0);
+                    display: flex;
+                    width: 106px;
+                    height: 26px;
+                    margin: 16px 0px 0px 0px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &__image {
+                        width: 20px;
+                        height: 20px;
+                        margin-top: 2px;
+                    }
+
+                    &__text {
+                        height: 26px;
+                        margin: 0px 0px 0px 14px;
+                        
+                        font-family: 'Epilogue';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        color: #686868;
+                    }
+                }
+
+                &__item3 {
+                    background-color: rgba(0, 255, 255, 0);
+                    display: flex;
+                    width: 116px;
+                    height: 26px;
+                    margin: 16px 0px 0px 3px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &__image {
+                        width: 15px;
+                        height: 20px;
+                        margin-top: 2px;
+                    }
+
+                    &__text {
+                        height: 26px;
+                        margin: 0px 0px 0px 16px;
+                        
+                        font-family: 'Epilogue';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        color: #686868;
+                    }
+                }
+
+                &__item4 {
+                    background-color: rgba(0, 255, 255, 0);
+                    display: flex;
+                    width: 102px;
+                    height: 26px;
+                    margin: 16px 0px 0px 0px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &__image {
+                        width: 20px;
+                        height: 20px;
+                        margin-top: 2px;
+                    }
+
+                    &__text {
+                        height: 26px;
+                        margin: 0px 0px 0px 14px;
+                        
+                        font-family: 'Epilogue';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        color: #686868;
+                    }
+                }
+            }
+        }
+
+        &__company {
+            background-color: rgba(255, 166, 0, 0);
+            width: auto;
+            height: auto;
+            margin: 16px 0px 0px 24px;
+
+            &__title {
+                background-color: rgba(172, 255, 47, 0);
+                display: flex;
+                width: 96px;
+                height: 26px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &__text {
+                    height: 26px;
+                    
+                    font-family: 'Epilogue';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    
+                    color: #686868;
+                }
+
+                &__image {
+                    width: 10px;
+                    height: 6px;
+                    margin: 10px 0px 0px 16px;
+                    transition: transform .5s;
+                }
+            }
+
+            &__list {
+                //display: none;
+                background-color: rgba(255, 0, 0, 0);
+                width: 76px;
+                //height: 110px;
+
+                height: 0;
+                padding: 0;
+                overflow: hidden;
+                transition: all .5s ease;
+                margin: 0;
+
+                margin-left: 24px;
+                //margin-top: 18px;
+                //margin-bottom: 24px;
+
+                &__item1 {
+                    background-color: rgba(0, 255, 255, 0);
+                    display: flex;
+                    width: 57px;
+                    height: 26px;
+                    margin: 0px 0px 0px 0px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &__text {
+                        height: 26px;
+                        
+                        font-family: 'Epilogue';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        color: #686868;
+                    }
+                }
+
+                &__item2 {
+                    background-color: rgba(0, 255, 255, 0);
+                    display: flex;
+                    width: 76px;
+                    height: 26px;
+                    margin: 16px 0px 0px 0px;
+                    
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &__text {
+                        height: 26px;
+                        
+                        font-family: 'Epilogue';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        color: #686868;
+                    }
+                }
+
+                &__item3 {
+                    background-color: rgba(0, 255, 255, 0);
+                    display: flex;
+                    width: 35px;
+                    height: 26px;
+                    margin: 16px 0px 0px 0px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &__text {
+                        height: 26px;
+                        
+                        font-family: 'Epilogue';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        color: #686868;
+                    }
+                }
+            }
+        }
+
+        &__careers {
+            background-color: rgba(255, 166, 0, 0);
+            width: auto;
+            height: auto;
+            margin: 16px 0px 0px 24px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &__title {
+                background-color: rgba(172, 255, 47, 0);
+                display: flex;
+                width: 64px;
+                height: 26px;
+
+                &__text {
+                    height: 26px;
+                    
+                    font-family: 'Epilogue';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    
+                    color: #686868;
+                }
+            }
+        }
+
+        &__about {
+            background-color: rgba(255, 166, 0, 0);
+            width: auto;
+            height: auto;
+            margin: 16px 0px 0px 24px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &__title {
+                background-color: rgba(172, 255, 47, 0);
+                display: flex;
+                width: 48px;
+                height: 26px;
+
+                &__text {
+                    height: 26px;
+                    
+                    font-family: 'Epilogue';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    
+                    color: #686868;
+                }
+            }
+        }
+
+        &__login {
+            width: 38px;
+            height: 16px;
+            margin: 32px 99px 0px 103px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &__text {
+                height: 16px;
+                
+                font-family: 'Epilogue';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+
+                color: #686868;
+            }
+        }
+
+        &__register {
+            width: 195px;
+            height: 42px;
+            margin: 16px 21px 0px 24px;
+
+            border: 1.5px solid #686868;
+            border-radius: 14px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &__text {
+                background-color: rgba(0, 255, 255, 0);
+                height: 16px;
+                margin: 12px auto;
+                
+                font-family: 'Epilogue';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                
+                text-align: center;
+                
+                color: #686868;
+            }
+        }
+    }
+}

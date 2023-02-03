@@ -1,0 +1,73 @@
+@use 'header';
+@use 'main';
+@use 'modal';
+      
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: #FAFAFA;
+}
+
+.web {
+    background: #FAFAFA;
+    position: relative;
+    width: 375px;
+    height: 780px;
+    margin: 0px auto;
+
+    overflow: hidden;
+
+    @media only screen and (min-width: 1440px) {
+        width: 1440px;
+        height: 900px;
+    }
+}
+
+.rotate {
+    transform: rotateX(180deg);
+}
+
+.appear_features {
+    height: 160px;
+}
+
+.appear_features__modal {
+    height: 152px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.appear_company {
+    height: 128px;
+}
+
+.appear_company__modal {
+    height: 110px;
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+
+.appear_navbar__modal {
+    transform: translateX(135px);
+}
+
+.appear_background__modal {
+    opacity: 0.75;
+    z-index: 0;
+}

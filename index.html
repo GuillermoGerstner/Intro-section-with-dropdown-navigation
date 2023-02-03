@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./files/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="web">
+    <header class="header-container">
+      <img src="./files/images/logo.svg" alt="logo" class="logo">
+  
+      <nav class="navbar">
+        <div class="navbar__links">
+          <div class="navbar__links__features">
+            <p class="navbar__links__features__text">Features</p>
+    
+            <img src="./files/images/icon-arrow-down.svg" alt="arrow" class="navbar__links__features__image">
+          </div>
+    
+          <div class="navbar__links__company">
+            <p class="navbar__links__company__text">Company</p>
+    
+            <img src="./files/images/icon-arrow-down.svg" alt="arrow" class="navbar__links__company__image">
+          </div>
+    
+          <p class="navbar__links__careers">Careers</p>
+    
+          <p class="navbar__links__about">About</p>
+        </div>
+  
+        <div class="navbar__enter">
+          <p class="navbar__enter__login">Login</p>
+  
+          <div class="navbar__enter__register">
+            <p class="navbar__enter__register__text">Register</p>
+          </div>
+        </div>
+      </nav>
+  
+      <img src="./files/images/icon-menu.svg" alt="menu" class="menu">
+    </header>
+
+    <main class="main-container">
+      <img src="" alt="figure" class="figure">
+  
+      <div class="content">
+        <div class="content__info">
+          <h1 class="content__info__title">Make remote work</h1>
+  
+          <p class="content__info__description">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+  
+          <button class="content__info__button">Learn more</button>
+        </div>
+  
+        <div class="content__sponsors">
+          <img src="./files/images/client-databiz.svg" alt="sponsor" class="content__sponsors__1">
+  
+          <img src="./files/images/client-audiophile.svg" alt="sponsor" class="content__sponsors__2">
+  
+          <img src="./files/images/client-meet.svg" alt="sponsor" class="content__sponsors__3">
+  
+          <img src="./files/images/client-maker.svg" alt="sponsor" class="content__sponsors__4">
+        </div>
+      </div>
+  
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.linkedin.com/in/guillermogerstner">Guillermo Gerstner</a>.
+      </div>
+    </main>
+
+    <!-- Header Menu -->
+    <div class="modal"></div>
+    <div class="modal__background"></div>
+    <nav class="modal__navbar">
+      <img src="./files/images/icon-close-menu.svg" alt="close" class="modal__navbar__close">
+      
+      <div class="modal__navbar__features">
+        <div class="modal__navbar__features__title">
+          <p class="modal__navbar__features__title__text">Features</p>
+
+          <img src="./files/images/icon-arrow-down.svg" alt="arrow" class="modal__navbar__features__title__image">
+        </div>
+        <ul class="modal__navbar__features__list">
+          <li class="modal__navbar__features__list__item1">
+            <img src="./files/images/icon-todo.svg" alt="icon" class="modal__navbar__features__list__item1__image">
+
+            <p class="modal__navbar__features__list__item1__text">Todo List</p>
+          </li>
+          <li class="modal__navbar__features__list__item2">
+            <img src="./files/images/icon-calendar.svg" alt="icon" class="modal__navbar__features__list__item2__image">
+
+            <p class="modal__navbar__features__list__item2__text">Calendar</p>
+          </li>
+          <li class="modal__navbar__features__list__item3">
+            <img src="./files/images/icon-reminders.svg" alt="icon" class="modal__navbar__features__list__item3__image">
+
+            <p class="modal__navbar__features__list__item3__text">Reminders</p>
+          </li>
+          <li class="modal__navbar__features__list__item4">
+            <img src="./files/images/icon-planning.svg" alt="icon" class="modal__navbar__features__list__item4__image">
+
+            <p class="modal__navbar__features__list__item4__text">Planning</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="modal__navbar__company">
+        <div class="modal__navbar__company__title">
+          <p class="modal__navbar__company__title__text">Company</p>
+
+          <img src="./files/images/icon-arrow-down.svg" alt="arrow" class="modal__navbar__company__title__image">
+        </div>
+        <ul class="modal__navbar__company__list">
+          <li class="modal__navbar__company__list__item1">
+            <p class="modal__navbar__company__list__item1__text">History</p>
+          </li>
+          <li class="modal__navbar__company__list__item2">
+            <p class="modal__navbar__company__list__item2__text">Our Team</p>
+          </li>
+          <li class="modal__navbar__company__list__item3">
+            <p class="modal__navbar__company__list__item3__text">Blog</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="modal__navbar__careers">
+        <div class="modal__navbar__careers__title">
+          <p class="modal__navbar__careers__title__text">Careers</p>
+        </div>
+      </div>
+
+      <div class="modal__navbar__about">
+        <div class="modal__navbar__about__title">
+          <p class="modal__navbar__about__title__text">About</p>
+        </div>
+      </div>
+
+      <div class="modal__navbar__login">
+        <p class="modal__navbar__login__text">Login</p>
+      </div>
+
+      <div class="modal__navbar__register">
+        <p class="modal__navbar__register__text">Register</p>
+      </div>
+
+    </nav>
+    <!---->
+
+    <!-- Features Menu -->
+    <div class="navbar__links__features__menu">
+      <ul class="navbar__links__features__menu__list">
+        <li class="navbar__links__features__menu__list__item1">
+          <img src="./files/images/icon-todo.svg" alt="icon" class="navbar__links__features__menu__list__item1__image">
+
+          <p class="navbar__links__features__menu__list__item1__text">Todo List</p>
+        </li>
+        <li class="navbar__links__features__menu__list__item2">
+          <img src="./files/images/icon-calendar.svg" alt="icon" class="navbar__links__features__menu__list__item2__image">
+
+          <p class="navbar__links__features__menu__list__item2__text">Calendar</p>
+        </li>
+        <li class="navbar__links__features__menu__list__item3">
+          <img src="./files/images/icon-reminders.svg" alt="icon" class="navbar__links__features__menu__list__item3__image">
+
+          <p class="navbar__links__features__menu__list__item3__text">Reminders</p>
+        </li>
+        <li class="navbar__links__features__menu__list__item4">
+          <img src="./files/images/icon-planning.svg" alt="icon" class="navbar__links__features__menu__list__item4__image">
+
+          <p class="navbar__links__features__menu__list__item4__text">Planning</p>
+        </li>
+      </ul>
+    </div>
+    <!---->
+
+    <!-- Company Menu -->
+    <div class="navbar__links__company__menu">
+      <ul class="navbar__links__company__menu__list">
+        <li class="navbar__links__company__menu__list__item1">
+          <p class="navbar__links__company__menu__list__item1__text">History</p>
+        </li>
+        <li class="navbar__links__company__menu__list__item2">
+          <p class="navbar__links__company__menu__list__item2__text">Our Team</p>
+        </li>
+        <li class="navbar__links__company__menu__list__item3">
+          <p class="navbar__links__company__menu__list__item3__text">Blog</p>
+        </li>
+      </ul>
+    </div>
+    <!---->
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
